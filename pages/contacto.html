@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/img/logos/icono_principal.webp" type="image/x-icon">
+    <title>My Games - Contacto</title>
+
+    <!--SEO-->
+        <meta name="description" content="Ponte en contacto conmigo para consultas, sugerencias o comentarios sobre mis videojuegos favoritos. Completa el formulario y te responderé a la brevedad.">
+        <meta name="keywords" content="contacto videojuegos, formulario de contacto gaming, contacto My Games, consultas videojuegos, sugerencias juegos">
+        <meta name="owner" content="Taiel Pernarcig">
+        <meta name="author" content="Taiel Pernarcig">
+
+    <!--OPEN GRAPH-->
+        <meta property="og:title" content="My Games - Contacto">
+        <meta property="og:url" content="https://ptaiel24.github.io/my-gaming-website/">
+        <meta property="og:image" content="https://raw.githubusercontent.com/PTaiel24/my-gaming-website/refs/heads/main/assets/logos/logo_inicio.webp">
+        <meta property="og:description" content="Ponte en contacto conmigo para consultas, sugerencias o comentarios sobre mis videojuegos favoritos. Completa el formulario y te responderé a la brevedad.">
+</head>
+<body id="top" class="top_index">
+    <header class="header_index">
+        <nav class="nav_header">
+            <!--Logo-->
+            <a href="../index.html" class="logo_conteiner">
+                <img src="../assets/img/logos/logo_principal.webp" alt="Logo del sitio Mis Juegos sobre videojuegos favoritos" class="img_header">
+            </a>
+
+            <!--Menu Hamburguesa-->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+            <label for="menu_toggle" class="menu_icon" aria-label="Abrir o cerrar menu de navegacion">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!--Navegacion-->
+            <ul class="menu_navbar">
+                <li>
+                    <a href="../pages/rfta.html">Remnant From The Ashes</a>
+                </li>
+                <li>
+                    <a href="../pages/minecraft.html">Minecraft</a>
+                </li>
+                <li>
+                    <a href="../pages/halo.html">Halo</a>
+                </li>
+                <li>
+                    <a href="../pages/prey.html">Prey</a>
+                </li>
+                <li>
+                    <a href="../pages/metro.html">Metro 2033</a>
+                </li>
+                <li>
+                    <a href="../pages/ark.html">Ark Survival Evolved</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_contacto">
+        <h1>Contacto</h1>
+        <section class="section_form">
+            <h2>Formulario De Contacto</h2>
+            <form action="./submit" method="post">
+                <label for="nombre_usuario">Ingresar su Nombre:</label>
+                <br>
+                <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Ejemplo: Steve">
+                <br>
+                <label for="email_usuario">Ingrese su Email:</label>
+                <br>
+                <input type="email" name="email_usuario" id="email_usuario" placeholder="Ejemplo: steve@gmail.com">
+                <br>
+                <label for="comentario_usuario">Comentario:</label>
+                <br>
+                <textarea name="comentario_usuario" id="comentario_usuario" placeholder="Ejemplo: Es una gran pagina dedicada a tus juegos"></textarea>
+                <br>
+                <label for="ubicacion_usuario">Pais:</label>
+                <br>
+                <select name="pais" id="ubicacion_usuario">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="">Argentina</option>
+                    <option value="">Chile</option>
+                    <option value="">Uruguay</option>
+                    <option value="">Brasil</option>
+                    <option value="">Paraguay</option>
+                </select>
+                <br>
+                <input type="reset" value="Borrar" class="boton_borrar">
+                <input type="submit" value="Enviar" class="boton_enviar">
+            </form>
+        </section>
+        <section class="maps_microsoft">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.037577283367!2d-58.39126717431154!3d-34.60392395543783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353362b5f933%3A0xc1b70cb49ba27aa0!2sMicrosoft%20Argentina!5e0!3m2!1ses!2sar!4v1774303850146!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps_microsoft"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer_index">
+        <nav class="nav_footer">
+            <ul class="logos_rrss">
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/logos/whatsapp.webp" alt="Logo de Whatsapp" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.webp" alt="Logo de Instagram " class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.webp" alt="Logo de Facebook" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/" target="_blank"><img src="../assets/img/logos/x.webp" alt="Logo de X(Twitter)" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://discord.com/" target="_blank"><img src="../assets/img/logos/discord.webp" alt="Logo de Discord" class="rrss"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <ul>
+                <li><a href="./contacto.html" aria-current="page">About & Contact</a></li>
+                <li><a href="https://github.com/PTaiel24" target="_blank">Github</a></li>
+            </ul>
+                
+            <p>© 2026 My Gaming Website. Todos los derechos reservados.</p>
+                
+            <a href="#top"><img src="../assets/img/logos/logo_principal.webp" alt="Logo de Mis Juegos que enlaza al inicio" class="img_footer"></a>
+        </section>
+    </footer>
+
+    <!--Boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

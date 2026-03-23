@@ -1,0 +1,51 @@
+@use "../variables" as v;
+
+.main_contacto {
+    text-align: center;
+    color: v.$text-light;
+
+    h1 {
+        padding-top: v.$space-sm;
+    }
+    .section_form {
+        h2 {
+            padding: v.$space-sm 0;
+        }
+        
+        label {
+            margin-bottom: v.$space-xs;
+        }
+
+        #nombre_usuario, #email_usuario, #ubicacion_usuario {
+            @include v.input-control(v.$input-width-lg, v.$input-height-sm);
+            margin-bottom: v.$space-lg;
+        }
+        #comentario_usuario {
+            @include v.input-control(v.$input-width-lg, v.$input-height-md);
+        }
+        .boton_borrar, .boton_enviar {
+            @include v.simple-button(v.$button-width-sm, v.$input-height-sm);
+            margin: v.$space-sm;
+        }
+
+        @include v.moviles {
+            #nombre_usuario, #email_usuario, #ubicacion_usuario, #comentario_usuario{
+                width: 90%;
+            }
+            
+        }
+    }
+    .maps_microsoft {
+        margin: v.$space-sm;
+
+        #maps_microsoft {
+            min-width: 50%;
+            max-width: 80%;
+            height: 25rem;
+        }
+
+        h2 {
+            margin-bottom: v.$space-sm;
+        }
+    }
+}

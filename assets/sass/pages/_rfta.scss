@@ -1,0 +1,118 @@
+@use "../variables" as v;
+
+.top_rfta {
+    background: #0f0f0f;
+    color: #e5e5e5;
+}
+
+.header_rfta {
+    background: #1a1a1a;
+
+    .nav_rfta {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#ff3c3c);
+            }
+        }
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #252323;
+            }
+        }
+    }
+}
+
+.main_rfta {
+    .hero_rfta {
+        @include v.page-hero("../img/rfta/hero.webp");
+
+        .hero_texto {
+            @include v.hero-text-box(rgba(0, 0, 0, 0.7));
+        }
+    }
+
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #ff3c3c;
+    }
+
+    /* DESCRIPCION */
+    .descripcion_rfta {
+        background: #1f1f1f;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #463b3b, #2a2a2a));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_rfta {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#8b0000, #b15858, #b15151, rgb(114, 49, 49));
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_rfta {
+        .img_carousel {
+            @include v.carousel-image;
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(145deg, #2e2a2a, #1a1a1a));
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_rfta {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+.footer_rfta {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+
+    a:hover {
+        color: #ff3c3c;
+    }
+}

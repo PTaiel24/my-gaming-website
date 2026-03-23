@@ -1,0 +1,181 @@
+$radius-md: 10px;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
+$space-xxl: 5rem;
+$section-padding-inline: 10%;
+$container-max-width: 1200px;
+$hero-min-height: 80vh;
+$hero-min-height-sm: 60vh;
+$feature-min-width: 200px;
+$hover-lift: -5px;
+$card-hover-lift: -10px;
+$active-nav-weight: 700;
+$active-nav-underline-offset: 0.25rem;
+$hero-width: 100%;
+$hero-overlay-base: rgba(0, 0, 0, 0.4);
+$full-size: 100%;
+$transition-base: 0.3s;
+$border-thin: 1px;
+$border-md: 2px;
+$size-icon-lg: 3rem;
+$size-icon-md: 2rem;
+$logo-width-lg: 10rem;
+$logo-width-md: 8rem;
+$card-radius-pill: 20px;
+$card-radius-xl: 50px;
+$input-width-lg: 30rem;
+$input-height-sm: 2rem;
+$input-height-md: 5rem;
+$button-width-sm: 5rem;
+$text-light: white;
+
+@mixin moviles {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (min-width: 768px) and (max-width: 1439px) {
+        @content;
+    }
+}
+
+@mixin active-nav-link($color) {
+    font-weight: $active-nav-weight;
+    text-decoration: underline;
+    text-underline-offset: $active-nav-underline-offset;
+    color: $color;
+}
+
+@mixin page-hero($image-path) {
+    background: url($image-path);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: $hero-width;
+    max-width: none;
+    min-height: $hero-min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 $space-sm;
+}
+
+@mixin hero-text-box($overlay) {
+    background: $overlay;
+    padding: $space-lg;
+    border-radius: $radius-md;
+}
+
+@mixin page-section {
+    max-width: $container-max-width;
+    margin: $space-xl auto;
+    padding: 0 $space-sm;
+}
+
+@mixin info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-lg;
+}
+
+@mixin info-card($background) {
+    background: $background;
+    padding: $space-md;
+    border-radius: $radius-md;
+    text-align: center;
+
+    &:hover {
+        transform: translateY($hover-lift);
+    }
+}
+
+@mixin feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($feature-min-width, 1fr));
+    gap: $space-lg;
+}
+
+@mixin feature-card($background, $border, $hover-border, $shadow, $border-width: 1px) {
+    background: $background;
+    padding: $space-md;
+    border-radius: $radius-md;
+    color: $text-light;
+    border: $border-width solid $border;
+
+    &:hover {
+        border-color: $hover-border;
+        box-shadow: 0 0 20px $shadow;
+    }
+}
+
+@mixin gameplay-section($background) {
+    background: $background;
+    padding: $space-xl $section-padding-inline;
+}
+
+@mixin gameplay-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-lg;
+}
+
+@mixin gameplay-image {
+    width: $full-size;
+    border-radius: $radius-md;
+}
+
+@mixin curiosidades-list {
+    padding-left: $space-md;
+
+    li {
+        margin-bottom: $space-xs;
+    }
+}
+
+@mixin carousel-image {
+    width: $full-size;
+    height: 30rem;
+}
+
+@mixin centered-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin image-cover-background($image-path) {
+    background-image: url($image-path);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin media-frame($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin input-control($width, $height) {
+    width: $width;
+    height: $height;
+    text-align: center;
+}
+
+@mixin simple-button($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text-link-hover($color) {
+    &:hover {
+        color: $color;
+    }
+}

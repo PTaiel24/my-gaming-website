@@ -1,0 +1,119 @@
+@use "../variables" as v;
+
+.top_ark {
+    background: #0f1720;
+    color: #e5e7eb;
+}
+
+.header_ark {
+    background: #1e293b;
+
+    .nav_ark {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#22d3ee);
+            }
+        }
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #283852;
+            }
+        }
+    }
+}
+
+.main_ark {
+
+    .hero_ark {
+        @include v.page-hero("../img/ark/hero.webp");
+    }
+
+    .hero_texto {
+        @include v.hero-text-box(rgba(5, 18, 34, 0.7));
+    }
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #84cc16;
+        text-shadow: 0 0 8px rgba(132, 204, 22, 0.6);
+    }
+
+    /* DESCRIPCION */
+    .descripcion_ark {
+        background: #1e3a2f;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #2f5d46, #1e3a2f));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_ark {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#020617, #a78bfa, #22d3ee, rgba(34, 211, 238, 0.4));
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_ark {
+        .img_carousel {
+            @include v.carousel-image;
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(180deg, #020617, #1e3a2f));
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_ark {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+.footer_ark {
+    background: #020617;
+    color: #9ca3af;
+    text-align: center;
+
+    a:hover {
+        color: #22d3ee;
+    }
+}

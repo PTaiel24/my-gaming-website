@@ -1,0 +1,118 @@
+@use "../variables" as v;
+
+.top_metro {
+    background: #1a1a1a;
+    color: #d6d3d1;
+}
+
+.header_metro {
+    background: #2b2b2b;
+
+    .nav_metro {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#a3e635);
+            }
+        }
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #2b2525;
+            }
+        }
+    }
+}
+
+.main_metro {
+
+    .hero_metro {
+        @include v.page-hero("../img/metro/hero.webp");
+    }
+
+    .hero_texto {
+        @include v.hero-text-box(rgba(0, 0, 0, 0.75));
+    }
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #a3e635;
+    }
+
+    /* DESCRIPCION */
+    .descripcion_metro {
+        background: #262626;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #3a3a3a, #292525));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_metro {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#4b5563, #333e4d, #2c3542, rgb(70, 79, 99));
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_metro {
+        .img_carousel {
+            @include v.carousel-image;
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(145deg, #1f2937, #141d2b));
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_metro {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+.footer_metro {
+    background: #111;
+    color: #9ca3af;
+    text-align: center;
+
+    a:hover {
+        color: #a3e635;
+    }
+}

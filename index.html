@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/img/logos/icono_principal.webp" type="image/x-icon">
+    <title>My Games - Home</title>
+
+    <!--SEO-->
+        <meta name="description" content="Lista de mis videojuegos favoritos con imágenes y una breve introducción a cada uno: Minecraft, Halo, Ark Survival Evolved, Prey, Metro y más. Descubre información y curiosidades de cada juego.">
+        <meta name="keywords" content="videojuegos, juegos favoritos, Minecraft, Halo, Ark Survival Evolved, Prey, Metro 2033, Remnant From The Ashes, videojuegos PC, coleccion de videojuegos, reseñas de videojuegos">
+        <meta name="owner" content="Taiel Pernarcig">
+        <meta name="author" content="Taiel Pernarcig">
+
+    <!--OPEN GRAPH-->
+        <meta property="og:title" content="My Games - Home">
+        <meta property="og:url" content="https://ptaiel24.github.io/my-gaming-website/">
+        <meta property="og:image" content="https://raw.githubusercontent.com/PTaiel24/my-gaming-website/refs/heads/main/assets/logos/logo_inicio.webp">
+        <meta property="og:description" content="Lista de mis videojuegos favoritos con imágenes y una breve introducción a cada uno: Minecraft, Halo, Ark Survival Evolved, Prey, Metro y más. Descubre información y curiosidades de cada juego.">
+</head>
+<body id="top" class="top_index">
+    <header class="header_index">
+        <nav class="nav_header">
+            <!--Logo-->
+            <a href="./index.html" class="logo_conteiner">
+                <img src="./assets/img/logos/logo_principal.webp" alt="Logo del sitio Mis Juegos sobre videojuegos favoritos" class="img_header">
+            </a>
+
+            <!--Menu Hamburguesa-->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+            <label for="menu_toggle" class="menu_icon" aria-label="Abrir o cerrar menu de navegacion">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!--Navegacion-->
+            <ul class="menu_navbar">
+                <li>
+                    <a href="./pages/rfta.html">Remnant From The Ashes</a>
+                </li>
+                <li>
+                    <a href="./pages/minecraft.html">Minecraft</a>
+                </li>
+                <li>
+                    <a href="./pages/halo.html">Halo</a>
+                </li>
+                <li>
+                    <a href="./pages/prey.html">Prey</a>
+                </li>
+                <li>
+                    <a href="./pages/metro.html">Metro 2033</a>
+                </li>
+                <li>
+                    <a href="./pages/ark.html">Ark Survival Evolved</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_index">
+        <section class="section_img">
+            <h1 class="titulo_main">Mis Juegos</h1>
+            <p class="breve_introduccion">Un espacio dedicado a algunos de mis videojuegos favoritos, donde comparto información, curiosidades y un poco de su historia.</p>
+        </section>
+
+<hr>
+
+        <section class="section_cards">
+            <article class="card card_minecraft" data-aos="zoom-in-right">
+                <h2 class="titulo_minecraft">Minecraft</h2>
+                <div id="carouselMinecraft" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/minecraft/boostrap.webp" class="d-block img_carousel" alt="Paisaje de Minecraft con montañas y bosque">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/minecraft/boostrap1.webp" class="d-block img_carousel" alt="Construcción en Minecraft hecha con bloques">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/minecraft/boostrap2.webp" class="d-block img_carousel" alt="Exploración en mundo abierto de Minecraft">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMinecraft" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMinecraft" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Un juego de mundo abierto donde puedes explorar, construir y sobrevivir en un universo generado de forma procedural. Desde construir enormes estructuras hasta enfrentarte a criaturas, Minecraft ofrece creatividad y aventura casi infinitas.</p>
+                <a href="./pages/minecraft.html" class="ver_mas">ver mas</a>
+            </article>
+            
+            <article class="card card_halo" data-aos="zoom-in-up">
+                <h2 class="titulo_halo">Halo</h2>
+                <div id="carouselHalo" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/halo/boostrap.webp" class="img_carousel" alt="Master Chief en combate en Halo">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/halo/boostrap1.webp" class="img_carousel" alt="Batalla futurista con armas en Halo">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/halo/boostrap2.webp" class="img_carousel" alt="Escenario de ciencia ficción en Halo">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHalo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHalo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Una de las sagas de shooters más icónicas. En Halo acompañas al Master Chief en una guerra épica entre la humanidad y el Covenant, combinando acción intensa, ciencia ficción y un universo lleno de historia.</p>
+                <a href="./pages/halo.html" class="ver_mas">ver mas</a>
+            </article>
+            
+            <article class="card card_ark" data-aos="zoom-in-left">
+                <h2 class="titulo_ark">Ark Survival Evolved</h2>
+                <div id="carouselArk" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/ark/boostrap.webp" class="img_carousel" alt="Jugador explorando isla con dinosaurios en Ark Survival Evolved">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/ark/boostrap1.webp" class="img_carousel" alt="Dinosaurio domesticado en Ark Survival Evolved">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/ark/boostrap2.webp" class="img_carousel" alt="Base construida en Ark Survival Evolved">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselArk" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselArk" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Un juego de supervivencia en un mundo lleno de dinosaurios y criaturas prehistóricas. Recolecta recursos, construye bases, domestica criaturas y sobrevive en un entorno hostil solo o junto a otros jugadores.</p>
+                <a href="./pages/ark.html" class="ver_mas">ver mas</a>
+            </article>
+            
+            <article class="card card_prey" data-aos="zoom-in-right">
+                <h2 class="titulo_prey">Prey</h2>
+                <div id="carouselPrey" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/prey/boostrap.webp" class="img_carousel" alt="Interior de estación espacial en Prey">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/prey/boostrap1.webp" class="img_carousel" alt="Criatura alienígena Typhon en Prey">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/prey/boostrap2.webp" class="img_carousel" alt="Exploración de Talos I en Prey">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrey" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPrey" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Un shooter de ciencia ficción ambientado en una estación espacial invadida por misteriosas criaturas alienígenas. Combina exploración, sigilo y habilidades especiales para descubrir qué ocurrió realmente en Talos I.</p>
+                <a href="./pages/prey.html" class="ver_mas">ver mas</a>
+            </article>
+            
+            <article class="card card_rfta" data-aos="zoom-in-up">
+                <h2 class="titulo_rfta">Remnant From The Ashes</h2>
+                <div id="carouselRFTA" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/rfta/boostrap.webp" class="img_carousel" alt="Combate contra enemigo en Remnant From The Ashes">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/rfta/boostrap1.webp" class="img_carousel" alt="Personaje armado explorando mundo en Remnant">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/rfta/boostrap2.webp" class="img_carousel" alt="Batalla contra jefe en Remnant From The Ashes">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselRFTA" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselRFTA" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Un juego de acción y disparos con elementos tipo souls-like. Explora mundos generados de forma procedural, enfréntate a poderosos jefes y mejora tu equipo mientras luchas por salvar a la humanidad.</p>
+                <a href="./pages/rfta.html" class="ver_mas">ver mas</a>
+            </article>
+            
+            <article class="card card_metro" data-aos="zoom-in-left">
+                <h2 class="titulo_metro">Metro 2033</h2>
+                <div id="carouselMetro" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/metro/boostrap.webp" class="img_carousel" alt="Superviviente en túneles del metro en Metro 2033">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/metro/boostrap1.webp" class="img_carousel" alt="Exploración en Moscú postapocalíptico en Metro">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/metro/boostrap2.webp" class="img_carousel" alt="Criatura mutante en Metro 2033">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetro" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMetro" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <p>Un shooter narrativo ambientado en un Moscú postapocalíptico donde los supervivientes viven en el metro. Combina exploración, supervivencia y una historia oscura en un mundo devastado por la guerra nuclear.</p>
+                <a href="./pages/metro.html" class="ver_mas">ver mas</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer_index">
+        <nav class="nav_footer">
+            <ul class="logos_rrss">
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./assets/img/logos/whatsapp.webp" alt="Logo de Whatsapp" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/logos/instagram.webp" alt="Logo de Instagram " class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/logos/facebook.webp" alt="Logo de Facebook" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/" target="_blank"><img src="./assets/img/logos/x.webp" alt="Logo de X(Twitter)" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://discord.com/" target="_blank"><img src="./assets/img/logos/discord.webp" alt="Logo de Discord" class="rrss"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <ul>
+                <li><a href="./pages/contacto.html">About & Contact</a></li>
+                <li><a href="https://github.com/PTaiel24" target="_blank">Github</a></li>
+            </ul>
+                
+            <p>© 2026 My Gaming Website. Todos los derechos reservados.</p>
+                
+            <a href="#top"><img src="./assets/img/logos/logo_principal.webp" alt="Logo de Mis Juegos que enlaza al inicio" class="img_footer"></a>
+        </section>
+    </footer>
+
+    <!--Boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+</body>
+</html>

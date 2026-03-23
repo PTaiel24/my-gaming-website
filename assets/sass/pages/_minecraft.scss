@@ -1,0 +1,126 @@
+@use "../variables" as v;
+
+.top_minecraft {
+    background: #c7d4a3;
+    color: #2b2b2b;
+}
+
+/* HEADER */
+.header_minecraft {
+    background: #3c8527;
+
+    .nav_minecraft {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#14532d);
+            }
+        }
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #4c813d;
+            }
+        }
+    }
+}
+
+.main_minecraft {
+
+    /* HERO */
+    .hero_minecraft {
+        @include v.page-hero("../img/minecraft/hero.webp");
+    }
+
+    .hero_texto {
+        @include v.hero-text-box(v.$hero-overlay-base);
+    }
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #3c8527;
+    }
+
+    /* DESCRIPCION */
+    .descripcion_minecraft {
+        background: #8fbc8f;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #f0fdf4, #bce7c9));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_minecraft {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#5e9c3e, #2e5e2c, #1c4b1b, rgb(34, 238, 44), 3px);
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_minecraft {
+        .img_carousel {
+            @include v.carousel-image;
+            image-rendering: crisp-edges; /* efecto pixel */
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(145deg, #6b8e23, #425a11));
+
+        h2 {
+            color: #14532d;
+        }
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_minecraft {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+/* FOOTER */
+.footer_minecraft {
+    background: #7a4f2b;
+    color: #fef3c7;
+    text-align: center;
+
+    a:hover {
+        color: #22c55e;
+    }
+}

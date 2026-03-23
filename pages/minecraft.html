@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/img/logos/icono_principal.webp" type="image/x-icon">
+    <title>My Games - Minecraft</title>
+
+    <!--SEO-->
+        <meta name="description" content="Explora, construye y sobrevive en Minecraft. Un mundo infinito lleno de biomas, criaturas y posibilidades donde tu creatividad no tiene límites.">
+        <meta name="keywords" content="Minecraft, Minecraft gameplay, Minecraft supervivencia, juego sandbox, construir en Minecraft, mundo infinito Minecraft, biomas Minecraft, mobs Minecraft, redstone, Mojang Studios, juegos de construcción, juegos de supervivencia PC, Minecraft características">
+        <meta name="owner" content="Taiel Pernarcig">
+        <meta name="author" content="Taiel Pernarcig">
+
+    <!--OPEN GRAPH-->
+        <meta property="og:title" content="My Games - Minecraft">
+        <meta property="og:url" content="https://ptaiel24.github.io/my-gaming-website/">
+        <meta property="og:image" content="https://raw.githubusercontent.com/PTaiel24/my-gaming-website/refs/heads/main/assets/logos/logo_inicio.webp">
+        <meta property="og:description" content="Explora, construye y sobrevive en Minecraft. Un mundo infinito lleno de biomas, criaturas y posibilidades donde tu creatividad no tiene límites.">
+</head>
+
+<body id="top" class="top_minecraft">
+    <header class="header_minecraft">
+        <nav class="nav_minecraft">
+            <a href="../index.html" class="logo_conteiner">
+                <img src="../assets/img/logos/logo_principal.webp" alt="Logo del sitio Mis Juegos" class="img_header">
+            </a>
+
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+            <label for="menu_toggle" class="menu_icon" aria-label="Abrir o cerrar menu de navegacion">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="menu_navbar">
+                <li><a href="../pages/rfta.html">Remnant From The Ashes</a></li>
+                <li><a href="../pages/minecraft.html" aria-current="page">Minecraft</a></li>
+                <li><a href="../pages/halo.html">Halo</a></li>
+                <li><a href="../pages/prey.html">Prey</a></li>
+                <li><a href="../pages/metro.html">Metro 2033</a></li>
+                <li><a href="../pages/ark.html">Ark Survival Evolved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_minecraft">
+
+        <!-- HERO -->
+        <section class="hero_minecraft">
+            <article class="hero_texto">
+                <h1>Un mundo hecho de bloques</h1>
+                <p>Explora, construye y sobrevive en un universo infinito lleno de posibilidades.</p>
+            </article>
+        </section>
+
+        <!-- DESCRIPCION -->
+        <section class="descripcion_minecraft">
+            <h2>¿Qué es Minecraft?</h2>
+            <p>Minecraft es un sandbox donde podés explorar mundos generados proceduralmente, recolectar recursos y construir todo lo que imagines.</p>
+            
+            <article class="info_grid">
+                <div class="info_card">
+                    <h3>Desarrollador</h3>
+                    <p>Mojang Studios</p>
+                </div>
+
+                <div class="info_card">
+                    <h3>Género</h3>
+                    <p>Sandbox / Supervivencia</p>
+                </div>
+
+                <div class="info_card">
+                    <h3>Modo</h3>
+                    <p>Singleplayer / Multiplayer</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- CARACTERISTICAS -->
+        <section class="caracteristicas_minecraft">
+            <h2>Características</h2>
+
+            <article class="grid_caracteristicas">
+                <div>
+                    <h3>Exploración</h3>
+                    <p>Biomas, cuevas y dimensiones únicas.</p>
+                </div>
+
+                <div>
+                    <h3>Construcción</h3>
+                    <p>Crea desde casas hasta ciudades enormes.</p>
+                </div>
+
+                <div>
+                    <h3>Supervivencia</h3>
+                    <p>Gestiona recursos y enfréntate a mobs.</p>
+                </div>
+
+                <div>
+                    <h3>Creatividad</h3>
+                    <p>Modo creativo sin límites.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria_minecraft">
+            <h2>Galería</h2>
+
+            <div id="carouselMinecraft" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../assets/img/minecraft/boostrap.webp" class="d-block img_carousel" alt="Paisaje de Minecraft con montañas y bosque">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/img/minecraft/boostrap1.webp" class="d-block img_carousel" alt="Construcción en Minecraft hecha con bloques">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/img/minecraft/boostrap2.webp" class="d-block img_carousel" alt="Exploración en mundo abierto de Minecraft">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMinecraft" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMinecraft" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- GAMEPLAY -->
+        <section class="gameplay">
+            <h2>Gameplay</h2>
+
+            <article class="gameplay_container">
+                <div class="gameplay_text">
+                    <p>Recolectá materiales, fabricá herramientas y sobreviví en un mundo lleno de criaturas y secretos.</p>
+                </div>
+
+                <div class="gameplay_img">
+                    <img src="../assets/img/minecraft/gameplay.webp" alt="Gameplay Minecraft">
+                </div>
+            </article>
+        </section>
+
+        <!-- CURIOSIDADES -->
+        <section class="curiosidades_minecraft">
+            <h2>Curiosidades</h2>
+
+            <ul>
+                <li>Su nombre original fue "Cave Game".</li>
+                <li>El mundo es prácticamente infinito.</li>
+                <li>Los creepers surgieron por un error.</li>
+                <li>Se pueden crear computadoras con redstone.</li>
+                <li>Es uno de los juegos más vendidos de la historia.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer_minecraft">
+        <nav class="nav_footer">
+            <ul class="logos_rrss">
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/logos/whatsapp.webp" alt="Logo de Whatsapp" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.webp" alt="Logo de Instagram " class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.webp" alt="Logo de Facebook" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/" target="_blank"><img src="../assets/img/logos/x.webp" alt="Logo de X(Twitter)" class="rrss"></a>
+                </li>
+
+                <li>
+                    <a href="https://discord.com/" target="_blank"><img src="../assets/img/logos/discord.webp" alt="Logo de Discord" class="rrss"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <ul>
+                <li><a href="../pages/contacto.html">About & Contact</a></li>
+                <li><a href="https://github.com/PTaiel24" target="_blank">Github</a></li>
+            </ul>
+                
+            <p>© 2026 My Gaming Website. Todos los derechos reservados.</p>
+                
+            <a href="#top"><img src="../assets/img/logos/logo_principal.webp" alt="Logo de Mis Juegos que enlaza al inicio" class="img_footer"></a>
+        </section>
+    </footer>
+
+    <!--Boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

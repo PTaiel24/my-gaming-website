@@ -1,0 +1,118 @@
+@use "../variables" as v;
+
+.top_halo {
+    background: #0b0f1a;
+    color: #e0e6ed;
+}
+
+.header_halo {
+    background: #111827;
+
+    .nav_halo {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#3b82f6);
+            }
+        }
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #202e4b;
+            }
+        }
+    }
+}
+
+.main_halo {
+
+    .hero_halo {
+        @include v.page-hero("../img/halo/hero.webp");
+    }
+
+    .hero_texto {
+        @include v.hero-text-box(rgba(0, 0, 0, 0.6));
+    }
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #3b82f6;
+    }
+
+    /* DESCRIPCION */
+    .descripcion_halo {
+        background: #111827;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #1f2937, #162436));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_halo {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#2563eb, #194dbb, #133e99, rgb(35, 63, 187));
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_halo {
+        .img_carousel {
+            @include v.carousel-image;
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(145deg, #0f172a, #09132c));
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_halo {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+.footer_halo {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+
+    a:hover {
+        color: #3b82f6;
+    }
+}

@@ -1,0 +1,120 @@
+@use "../variables" as v;
+
+.top_prey {
+    background: #0a0a0a;
+    color: #eaeaea;
+}
+
+.header_prey {
+    background: #111;
+
+    .nav_prey {
+        ul {
+            a[aria-current=page] {
+                @include v.active-nav-link(#facc15);
+            }
+        }
+
+        @include v.moviles {
+            .menu_toggle:checked~.menu_navbar {
+                background-color: #1d1a10;
+            }
+        }
+    }
+}
+
+.main_prey {
+
+    .hero_prey {
+        @include v.page-hero("../img/prey/hero.webp");
+    }
+
+    .hero_texto {
+        @include v.hero-text-box(rgba(0, 0, 0, 0.75));
+    }
+
+    section {
+        @include v.page-section;
+    }
+
+    h1 {
+        color: #facc15;
+    }
+
+    /* DESCRIPCION */
+    .descripcion_prey {
+        background: #141414;
+        padding: v.$space-xl v.$section-padding-inline;
+
+        .info_grid {
+            @include v.info-grid;
+
+            .info_card {
+                @include v.info-card(linear-gradient(145deg, #1f1f1f, #1f1818));
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .info_card {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* CARACTERISTICAS */
+    .caracteristicas_prey {
+        .grid_caracteristicas {
+            @include v.feature-grid;
+
+            div {
+                @include v.feature-card(#d8b93f, #ffd52d, #ddb928, rgb(202, 192, 50));
+                color: #000;
+            }
+        }
+    }
+
+    /* GALERIA */
+    .galeria_prey {
+        .img_carousel {
+            @include v.carousel-image;
+        }
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+        @include v.gameplay-section(linear-gradient(145deg, #111, #241e1e));
+
+        .gameplay_container {
+            @include v.gameplay-container;
+
+            img {
+                @include v.gameplay-image;
+            }
+
+            @include v.moviles {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* CURIOSIDADES */
+    .curiosidades_prey {
+        ul {
+            @include v.curiosidades-list;
+        }
+    }
+}
+
+.footer_prey {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+
+    a:hover {
+        color: #facc15;
+    }
+}

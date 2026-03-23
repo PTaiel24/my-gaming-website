@@ -1,0 +1,109 @@
+@use "variables" as v;
+
+header {
+    position: sticky;
+    z-index: 100;
+    nav {
+        .menu_navbar li a{
+            color: #e5e7eb;
+            font-weight: 500;
+            transition: v.$transition-base;
+        }
+        /*-----Logo-----*/
+        .logo_conteiner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+
+            .img_header {
+                grid-column: 2/3;
+                justify-self: center;
+                width: v.$logo-width-lg;
+                height: auto;
+            }
+        }
+
+        /*-----Menu Hamburguesa-----*/
+        .menu_toggle { /* Oculta el checkbox */
+            display: none;
+        }
+        .menu_icon { /* Oculta el botón en escritorio */
+            display: none;
+            cursor: pointer;
+            
+            span { /* Líneas del icono */
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: white;
+                margin: 4px 0;
+                padding: 0;
+                transition: v.$transition-base;
+            }
+        }
+        /*-----Navegacion-----*/
+        .menu_navbar {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 1rem;
+            margin: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        @include v.moviles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo_conteiner {
+                display: flex;
+                justify-content: start;
+
+                .img_header {
+                    width: v.$logo-width-md;
+                }
+            }
+
+            .menu_icon {
+                display: block;
+                padding: v.$space-sm;
+            }
+
+            .menu_navbar {
+                display: none;
+                align-items: center;
+            }
+
+            .menu_toggle:checked~.menu_navbar {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: v.$full-size;
+                padding: 20px 0;
+                gap: v.$space-sm;
+                font-size: large;
+            }
+
+            .menu_toggle:checked+.menu_icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .menu_toggle:checked+.menu_icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu_toggle:checked+.menu_icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+        }
+    }
+}
