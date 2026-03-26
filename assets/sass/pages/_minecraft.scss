@@ -12,7 +12,7 @@
     .nav_minecraft {
         ul {
             a[aria-current=page] {
-                @include v.active-nav-link(#14532d);
+                @include v.active-nav-link(#88eb6d);
             }
         }
         @include v.moviles {
@@ -32,6 +32,7 @@
 
     .hero_texto {
         @include v.hero-text-box(v.$hero-overlay-base);
+        color: white
     }
 
     section {
@@ -39,7 +40,7 @@
     }
 
     h1 {
-        color: #3c8527;
+        color: #88eb6d;
     }
 
     /* DESCRIPCION */
@@ -95,13 +96,8 @@
         .gameplay_container {
             @include v.gameplay-container;
 
-            img {
+            .gameplay_img {
                 @include v.gameplay-image;
-            }
-
-            @include v.moviles {
-                display: flex;
-                flex-direction: column;
             }
         }
     }

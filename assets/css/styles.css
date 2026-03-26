@@ -295,7 +295,7 @@ footer section a .img_footer {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.25rem;
-  color: #14532d;
+  color: #88eb6d;
 }
 @media (max-width: 767px) {
   .header_minecraft .nav_minecraft .menu_toggle:checked ~ .menu_navbar {
@@ -326,6 +326,7 @@ footer section a .img_footer {
   background: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   border-radius: 10px;
+  color: white;
 }
 .main_minecraft section {
   max-width: 1200px;
@@ -333,7 +334,7 @@ footer section a .img_footer {
   padding: 0 1rem;
 }
 .main_minecraft h1 {
-  color: #3c8527;
+  color: #88eb6d;
 }
 .main_minecraft {
   /* DESCRIPCION */
@@ -404,19 +405,13 @@ footer section a .img_footer {
   color: #14532d;
 }
 .main_minecraft .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_minecraft .gameplay .gameplay_container img {
+.main_minecraft .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_minecraft .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_minecraft {
   /* CURIOSIDADES */
@@ -552,19 +547,13 @@ footer section a .img_footer {
   padding: 4rem 10%;
 }
 .main_rfta .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_rfta .gameplay .gameplay_container img {
+.main_rfta .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_rfta .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_rfta {
   /* CURIOSIDADES */
@@ -699,19 +688,13 @@ footer section a .img_footer {
   padding: 4rem 10%;
 }
 .main_halo .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_halo .gameplay .gameplay_container img {
+.main_halo .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_halo .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_halo {
   /* CURIOSIDADES */
@@ -849,19 +832,13 @@ footer section a .img_footer {
   padding: 4rem 10%;
 }
 .main_prey .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_prey .gameplay .gameplay_container img {
+.main_prey .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_prey .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_prey {
   /* CURIOSIDADES */
@@ -996,19 +973,13 @@ footer section a .img_footer {
   padding: 4rem 10%;
 }
 .main_metro .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_metro .gameplay .gameplay_container img {
+.main_metro .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_metro .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_metro {
   /* CURIOSIDADES */
@@ -1144,19 +1115,13 @@ footer section a .img_footer {
   padding: 4rem 10%;
 }
 .main_ark .gameplay .gameplay_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.main_ark .gameplay .gameplay_container img {
+.main_ark .gameplay .gameplay_container .gameplay_img {
   width: 100%;
+  height: 25rem;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .main_ark .gameplay .gameplay_container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .main_ark {
   /* CURIOSIDADES */

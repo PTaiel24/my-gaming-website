@@ -88,13 +88,8 @@
         .gameplay_container {
             @include v.gameplay-container;
 
-            img {
+            .gameplay_img {
                 @include v.gameplay-image;
-            }
-
-            @include v.moviles {
-                display: flex;
-                flex-direction: column;
             }
         }
     }

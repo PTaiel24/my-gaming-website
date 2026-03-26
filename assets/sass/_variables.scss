@@ -122,13 +122,13 @@ $text-light: white;
 }
 
 @mixin gameplay-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: $space-lg;
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin gameplay-image {
     width: $full-size;
+    height: 25rem;
     border-radius: $radius-md;
 }
 
